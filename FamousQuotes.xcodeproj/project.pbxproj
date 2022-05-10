@@ -8,17 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		B48432B4282A9B47009B406D /* FamousQuotesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48432B3282A9B47009B406D /* FamousQuotesApp.swift */; };
-		B48432B6282A9B47009B406D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48432B5282A9B47009B406D /* ContentView.swift */; };
+		B48432B6282A9B47009B406D /* QuotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48432B5282A9B47009B406D /* QuotesView.swift */; };
 		B48432B8282A9B50009B406D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48432B7282A9B50009B406D /* Assets.xcassets */; };
 		B48432BB282A9B50009B406D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B48432BA282A9B50009B406D /* Preview Assets.xcassets */; };
+		B48432C2282AA024009B406D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = B48432C1282AA023009B406D /* GoogleService-Info.plist */; };
+		B48432C5282AA185009B406D /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = B48432C4282AA185009B406D /* FirebaseFirestore */; };
+		B48432C7282AA340009B406D /* QuoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48432C6282AA340009B406D /* QuoteRepository.swift */; };
+		B48432C9282AA77F009B406D /* Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48432C8282AA77F009B406D /* Quote.swift */; };
+		B48432CB282AAA17009B406D /* QuotesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B48432CA282AAA16009B406D /* QuotesViewModel.swift */; };
+		B48432CE282AABFE009B406D /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B48432CD282AABFE009B406D /* FirebaseFirestoreSwift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		B48432B0282A9B47009B406D /* FamousQuotes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FamousQuotes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B48432B3282A9B47009B406D /* FamousQuotesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FamousQuotesApp.swift; sourceTree = "<group>"; };
-		B48432B5282A9B47009B406D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		B48432B5282A9B47009B406D /* QuotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesView.swift; sourceTree = "<group>"; };
 		B48432B7282A9B50009B406D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B48432BA282A9B50009B406D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		B48432C1282AA023009B406D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		B48432C6282AA340009B406D /* QuoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteRepository.swift; sourceTree = "<group>"; };
+		B48432C8282AA77F009B406D /* Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Quote.swift; sourceTree = "<group>"; };
+		B48432CA282AAA16009B406D /* QuotesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuotesViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,6 +36,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B48432C5282AA185009B406D /* FirebaseFirestore in Frameworks */,
+				B48432CE282AABFE009B406D /* FirebaseFirestoreSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -35,8 +47,10 @@
 		B48432A7282A9B47009B406D = {
 			isa = PBXGroup;
 			children = (
+				B48432C1282AA023009B406D /* GoogleService-Info.plist */,
 				B48432B2282A9B47009B406D /* FamousQuotes */,
 				B48432B1282A9B47009B406D /* Products */,
+				B48432CC282AABFE009B406D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -52,9 +66,12 @@
 			isa = PBXGroup;
 			children = (
 				B48432B3282A9B47009B406D /* FamousQuotesApp.swift */,
-				B48432B5282A9B47009B406D /* ContentView.swift */,
+				B48432B5282A9B47009B406D /* QuotesView.swift */,
 				B48432B7282A9B50009B406D /* Assets.xcassets */,
 				B48432B9282A9B50009B406D /* Preview Content */,
+				B48432C6282AA340009B406D /* QuoteRepository.swift */,
+				B48432C8282AA77F009B406D /* Quote.swift */,
+				B48432CA282AAA16009B406D /* QuotesViewModel.swift */,
 			);
 			path = FamousQuotes;
 			sourceTree = "<group>";
@@ -65,6 +82,13 @@
 				B48432BA282A9B50009B406D /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		B48432CC282AABFE009B406D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +107,10 @@
 			dependencies = (
 			);
 			name = FamousQuotes;
+			packageProductDependencies = (
+				B48432C4282AA185009B406D /* FirebaseFirestore */,
+				B48432CD282AABFE009B406D /* FirebaseFirestoreSwift */,
+			);
 			productName = FamousQuotes;
 			productReference = B48432B0282A9B47009B406D /* FamousQuotes.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +139,9 @@
 				Base,
 			);
 			mainGroup = B48432A7282A9B47009B406D;
+			packageReferences = (
+				B48432C3282AA185009B406D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = B48432B1282A9B47009B406D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,6 +158,7 @@
 			files = (
 				B48432BB282A9B50009B406D /* Preview Assets.xcassets in Resources */,
 				B48432B8282A9B50009B406D /* Assets.xcassets in Resources */,
+				B48432C2282AA024009B406D /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +169,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B48432B6282A9B47009B406D /* ContentView.swift in Sources */,
+				B48432C9282AA77F009B406D /* Quote.swift in Sources */,
+				B48432B6282A9B47009B406D /* QuotesView.swift in Sources */,
 				B48432B4282A9B47009B406D /* FamousQuotesApp.swift in Sources */,
+				B48432CB282AAA17009B406D /* QuotesViewModel.swift in Sources */,
+				B48432C7282AA340009B406D /* QuoteRepository.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,6 +376,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		B48432C3282AA185009B406D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		B48432C4282AA185009B406D /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B48432C3282AA185009B406D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		B48432CD282AABFE009B406D /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = B48432C3282AA185009B406D /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = B48432A8282A9B47009B406D /* Project object */;
 }
